@@ -6,6 +6,7 @@
 .container {
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .grid-3{
     display: grid;
@@ -16,6 +17,7 @@
 .right-slide{
     position: absolute;
     height: 100%;
+    
 }
 .left-item, 
 .right-item{
@@ -30,50 +32,70 @@
 }
 /*right side*/
 .left-slide{
-    top: -300vh;
     left: 0;
     width: 35%;
-    transition: top 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transform: translateY(-300vh);
+    -webkit-transform: translateY(-300vh);
+    -moz-transform: translateY(-300vh);
+    -ms-transform: translateY(-300vh);
+    -o-transform: translateY(-300vh);
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
 }
 .right-slide{
     right: 0;
-    top: 0 ;
     width: 65%;
-    transition: top 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
 }
 
 /*left side*/
-.left-item[data-season="autumn"]{
-    background-color: #7A3536;
+.left-item[data-country="china"]{
+    background-color: red;
     color: #fff;
 }
 
-.left-item[data-season="summer"]{
+.left-item[data-country="france"]{
     background-color: #000E5A;
     color: #fff;
 }
-.left-item[data-season="spring"]{
+.left-item[data-country="india"]{
     background-color: #FF7C45;
     color: #fff;
 }
-.left-item[data-season="winter"]{
-    background-color: #83A0A8;
+.left-item[data-country="egypt"]{
+    background-color: #222;
     color: #fff;
 }
 
-.right-item[data-season="autumn"]{
-    background: url(/imgs/autumn.jpg) no-repeat center center / cover;
+.right-item{
+    background-position: center center;
+    background-size: cover;
+}
+.right-item[data-country="egypt"]{
+    background: url(/imgs/Egypt.jpg) no-repeat center center / cover;
 
 }
-.right-item[data-season="summer"]{
-    background: url(/imgs/summer.jpg) no-repeat center center / cover;
+.right-item[data-country="india"]{
+    background: url(/imgs/India.jpg) no-repeat center center / cover;
 
 }
-.right-item[data-season="spring"]{
-    background: url(/imgs/spring.jpg) no-repeat center center / cover;
+.right-item[data-country="france"]{
+    background: url(/imgs/France.jpg) no-repeat center center / cover;
 }
-.right-item[data-season="winter"]{
-    background: url(/imgs/winter.jpg) no-repeat center center / cover;
+.right-item[data-country="china"]{
+    background: url(/imgs/China.jpg) no-repeat center center / cover;
 
 }
 /*button*/

@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Vertical Slider</title>
-</head>
-<body>
-    <section class="grid-3 container">
-        <div class="left-slide">
-            <div class="left-item" data-season="winter">
-                <h1>Winter</h1>
-            </div>
-            <div class="left-item" data-season="spring">
-                <h1>Sprring</h1>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Vertical Slider</title>
+	</head>
+	<body>
+		<section class="grid-3 container">
+			<div class="left-slide">
+				<div class="left-item" data-country="china">
+					<h1>China</h1>
+				</div>
+				<div class="left-item" data-country="france">
+					<h1>France</h1>
+				</div>
 
-            <div class="left-item" data-season="summer">
-                <h1>Summer</h1>
-            </div>
-            <div class="left-item" data-season="autumn">
-                <h1>Autumn</h1>
-            </div>
-        </div>
-        <div class="right-slide">
-            <div class="right-item" data-season="autumn"></div>
-            <div class="right-item" data-season="summer"></div>
-            <div class="right-item" data-season="spring"></div>
-            <div class="right-item" data-season="winter"></div>
-        </div>
-        <div class="button btn-up">
-            <i class="button btn-up fas fa-arrow-up "></i>
-        </div>
-        <div class="button btn-down">
-            <i class="button btn-down fas fa-arrow-down "></i>
-        </div>
-    </section>
-    <script src="script.js"></script>
-</body>
+				<div class="left-item" data-country="india">
+					<h1>India</h1>
+				</div>
+				<div class="left-item" data-country="egypt">
+					<h1>Egypt</h1>
+				</div>
+			</div>
+			<div class="right-slide">
+				<div class="right-item" data-country="egypt"></div>
+				<div class="right-item" data-country="india"></div>
+				<div class="right-item" data-country="france"></div>
+				<div class="right-item" data-country="china"></div>
+			</div>
+			<div class="button btn-up">
+				<i class="button btn-up fas fa-arrow-up"></i>
+			</div>
+			<div class="button btn-down">
+				<i class="button btn-down fas fa-arrow-down"></i>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
 </html>
